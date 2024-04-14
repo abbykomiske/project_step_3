@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.553">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -65,31 +65,49 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+
 </header>
 
-<section id="brainstorming" class="level3">
-<h3 class="anchored" data-anchor-id="brainstorming">Brainstorming</h3>
-</section>
-<section id="new-research-question-can-the-use-of-language-analysis-from-us-court-decisions-in-north-carolina-help-predict-future-judicial-behavior-in-america" class="level2">
-<h2 class="anchored" data-anchor-id="new-research-question-can-the-use-of-language-analysis-from-us-court-decisions-in-north-carolina-help-predict-future-judicial-behavior-in-america">New Research Question: Can the use of language analysis from US court decisions in North Carolina help predict future judicial behavior in America?</h2>
+
+<section id="brainstorming" class="level2">
+<h2 class="anchored" data-anchor-id="brainstorming">Brainstorming</h2>
+<section id="research-question" class="level3">
+<h3 class="anchored" data-anchor-id="research-question">Research question</h3>
+<!-- America or NC? -->
 <ul>
-<li>This needs to be refined/concentrated and I know there are a lot of holes… Predict what? winning/losing in general or only in cases where circumstances are similar?? Unsure… However, considering that precedent matters so much in the courts, general patterns should illuminate some kind of information about how judges would approach similar cases in the future.</li>
+<li><em>Can the use of language analysis from US court decisions in North Carolina help predict future judicial behavior in America?</em><br>
+This needs to be refined/concentrated and I know there are a lot of holes… Predict what? winning/losing in general or only in cases where circumstances are similar?? Unsure… However, considering that precedent matters so much in the courts, general patterns should illuminate some kind of information about how judges would approach similar cases in the future.</li>
+</ul>
+<!--
+
+As you point out, there is more to think about here. A lot of this deals with operationalizing your research question. What do you mean by "judicial behavior"? What are the specific outcomes you are trying to predict? How will you measure these outcomes? What are the variables/ features you will use to predict these outcomes? How will you measure these features?
+
+But before you start adding complexity, just touch base with your research question. What is it you are trying to find out? Why does it matter? What have others done in this area? What are the gaps in the literature? If you address these first, the rest will follow a bit more naturally.
+
+-->
+</section>
+<section id="ideal-dataset" class="level3">
+<h3 class="anchored" data-anchor-id="ideal-dataset">Ideal dataset</h3>
+<ul>
+<li><em>What is the ideal data and ideal dataset(s) will be necessary to address your research problem and statement? Describe the data and dataset(s) in terms of their content, structure, and format.</em><br>
+The US rulings in Harvard’s Caselaw Access Project database could be used for this. <!-- You should be more clear about what is actually in the data base and what you will need to to to acquire, curate, and transform the cases such that they will be useful in your research--> They have all public court decisions possible, so I could include all cases present at the federal, state, and local levels. The ideal data set would then be structured to include language pattern analysis - word frequency, name, tone analysis, legal terminology, and the length and/or complexity (using a complexity calculator/algorithm) of sentences. <!-- This is a long list. Do you have any corroborating evidence that these are good/ useful features? Again, background literature would be really helpful here.--> With these measures in line, they could be compared with the outcome of the case, whether in favor of the plaintiff or defendant. From there, it may be possible to predict if certain measures in legal language show favor toward a plaintiff or defendant. <!-- Now, just clarifying, what do you mean by legal language? Who's language? Defendant's? Plaintiff's? Judge's. You need to be more specific.--></li>
 </ul>
 </section>
-<section id="what-is-the-ideal-data-and-ideal-datasets-will-be-necessary-to-address-your-research-problem-and-statement-describe-the-data-and-datasets-in-terms-of-their-content-structure-and-format." class="level2">
-<h2 class="anchored" data-anchor-id="what-is-the-ideal-data-and-ideal-datasets-will-be-necessary-to-address-your-research-problem-and-statement-describe-the-data-and-datasets-in-terms-of-their-content-structure-and-format.">- What is the ideal data and ideal dataset(s) will be necessary to address your research problem and statement? Describe the data and dataset(s) in terms of their content, structure, and format.</h2>
-<p>The US rulings in Harvard’s Caselaw Access Project database could be used for this. They have all public court decisions possible, so I could include all cases present at the federal, state, and local levels. The ideal data set would then be structured to include language pattern analysis - word frequency, name, tone analysis, legal terminology, and the length and/or complexity (using a complexity calculator/algorithm) of sentences. With these measures in line, they could be compared with the outcome of the case, whether in favor of the plaintiff or defendant. From there, it may be possible to predict if certain measures in legal language show favor toward a plaintiff or defendant.</p>
+<section id="available-data-and-datasets" class="level3">
+<h3 class="anchored" data-anchor-id="available-data-and-datasets">Available data and datasets</h3>
+<ul>
+<li><em>What are the available data and/ or datasets that (best) align with your idealized data and dataset(s)? Describe where there is alignment and misalignment. How will you address any misalignment?</em><br>
+The Harvard CaseLaw database would align well with my study because there is all the corpora I could possibly need or get access to.</li>
+</ul>
 </section>
-<section id="what-are-the-available-data-and-or-datasets-that-best-align-with-your-idealized-data-and-datasets-describe-where-there-is-alignment-and-misalignment.-how-will-you-address-any-misalignment" class="level2">
-<h2 class="anchored" data-anchor-id="what-are-the-available-data-and-or-datasets-that-best-align-with-your-idealized-data-and-datasets-describe-where-there-is-alignment-and-misalignment.-how-will-you-address-any-misalignment">- What are the available data and/ or datasets that (best) align with your idealized data and dataset(s)? Describe where there is alignment and misalignment. How will you address any misalignment?</h2>
-<p>The Harvard CaseLaw database would align well with my study because there is all the corpora I could possibly need or get access to.</p>
-<section id="draft-a-data-preparation-strategy" class="level3">
-<h3 class="anchored" data-anchor-id="draft-a-data-preparation-strategy">Draft a data preparation strategy</h3>
+</section>
+<section id="data-preparation-strategy" class="level2">
+<h2 class="anchored" data-anchor-id="data-preparation-strategy">Data preparation strategy</h2>
 <ol type="1">
 <li>Develop a data preparation strategy that outlines the data and dataset(s) that will be necessary to address your research problem and statement. Your strategy should outline the acquisition, curation, and transformation of the data and dataset(s) and should address the following questions:</li>
 </ol>
 <p>First, I would need to access the Harvard Caselaw Project. I need to compile all of the corpora I will be using into one. It seems like they can be accessed via JSON files, so I would need to learn/understand how to manipulate those and tabularize the meta data that those contain. I will most likely also have to narrow my research into a state or a certain court level within all the states so that all information found in them can be referenced to each other for pattern recognitoin. I would prefer to do all appellate court decisions in the US, minus other territories, or either DC, MD, or NC. Then, I would need to quantify and curate for word frequency, name of defendants/plaintiffs, who won, issue, type of suit, tone analysis, legal terminology, and the length and/or complexity (using a complexity calculator/algorithm) of sentences within each case. With this, I would need to then consider other factors that might influence the court decisions, like location perhaps.</p>
-</section>
+<!-- I would look into what the contents and structure of the files from the Harvard Caselaw Project first. It's hard to imagine (realistically) what you can extract and the measures you can derive without knowing for sure what you have and how possible it is to manipulate. In addition, while is sounds more impressive to add a host of measures, it quickly becomes unweildy. I would really encourage you to look at and include any relevant literature in this area to help you narrow your focus and help you define a feasible research plan. -->
 </section>
 <section id="assessing-your-progress" class="level2">
 <h2 class="anchored" data-anchor-id="assessing-your-progress">Assessing your progress</h2>
@@ -101,14 +119,17 @@ ul.task-list li input[type="checkbox"] {
 <li>What did you learn?</li>
 </ul>
 <p>I learned more about my research question and had to actually think about the data curation steps, which was great progress for my project.</p>
+<!-- Cool. Yeah, the more you find out the more realistic your plan becomes and it gets exciting. Setbacks are part of the process, however. :) -->
 <ul>
 <li>What did you find most/ least challenging?</li>
 </ul>
 <p>I think making the data curation steps is the hardest.</p>
+<!-- As you move forward, I would encourage you to take a look at the database files themselves and then envision an 'idealized' dataset for the curated dataset and then another 'idealized' dataset for the transformed dataset. This will help you stay grounded and think of the practical aspects that are key to any research project. -->
 <ul>
 <li>What resources did you consult?</li>
 </ul>
 <p>I consulted the professor and the textbook.</p>
+<!-- Cool. -->
 <ul>
 <li>What questions or concerns do you have at this point?</li>
 </ul>
@@ -116,7 +137,9 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>What do you need to address in order to move forward?</li>
 </ul>
-<p>I need to start the actual steps of taking my data from Harvard Caselaw and curating/transforming the available corpus for my project. This comes down to my data preparation strategy, which is currently very loose and I need guidance on. Also, how can I make a BibTex citation for the entire database since I want to cite Harvard Caselaw.</p>
+<p>I need to start the actual steps of taking my data from Harvard Caselaw and curating/transforming the available corpus for my project. This comes down to my data preparation strategy, which is currently very loose and I need guidance on.</p>
+<p>Also, how can I make a BibTex citation for the entire database since I want to cite Harvard Caselaw.</p>
+<!-- You may be able to find a page on their site which will instruct you on how to cite the project. If not, search Google Scholar and/ or look at  research articles that have cited this source. -->
 </section>
 <section id="consider-how-your-prospectus-is-shaping-up." class="level2">
 <h2 class="anchored" data-anchor-id="consider-how-your-prospectus-is-shaping-up.">Consider how your prospectus is shaping up.</h2>
@@ -124,14 +147,17 @@ ul.task-list li input[type="checkbox"] {
 <li>How have your interests evolved?</li>
 </ul>
 <p>My interests have definitely evolved. I knew I wanted to focus on legal linguistics, but I have explored a lot of areas within that to get where I am now.</p>
+<!-- Cool. It is a neat area that has a lot of potential growth. -->
 <ul>
 <li>How have your research questions and objectives evolved?</li>
 </ul>
 <p>Yes, my research question has changed just in the last few weeks. I thought I wanted to compare legal with nonlegal corpus, but now I want to use just legal corpus to predict something, which is most likely judicial behavior. Meeting on April 1st has helped me understand the directions I can go in with this.</p>
+<!-- Cool. -->
 <ul>
 <li>How have these changes been influenced by the literature you have reviewed and/ or the knowledge you have gained in this course?</li>
 </ul>
 <p>This change has happened because I have come into contact with the Harvard cite for corpus, which honestly feels like a gold mine. With access to all public legal corpus in the US at my fingertips, doing a holistic study to find patterns and see if there is a general trajectory of judicial behavior could be really groundbreaking in such a new field.</p>
+<!-- Don't forget the literature. I think if there is one thing to take away from this step it's to dive back into the primary literature to help you frame the research question and methods a bit more effectively. -->
 </section>
 
 </main>
@@ -215,10 +241,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -228,8 +271,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -241,7 +293,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -285,6 +460,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -310,6 +486,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -370,6 +572,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+
 
 
 
