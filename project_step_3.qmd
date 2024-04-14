@@ -1,29 +1,43 @@
 ---
 title: Project Step 3
-author: Abby Komiske 
+author: Abby Komiske
 ---
-### Brainstorming
 
-## New Research Question: Can the use of language analysis from US court decisions in North Carolina help predict future judicial behavior in America? 
+## Brainstorming
 
-- This needs to be refined/concentrated and I know there are a lot of holes... Predict what? winning/losing in general or only in cases where circumstances are similar?? Unsure... However, considering that precedent matters so much in the courts, general patterns should illuminate some kind of information about how judges would approach similar cases in the future. 
+### Research question
 
-## - What is the ideal data and ideal dataset(s) will be necessary to address your research problem and statement? Describe the data and dataset(s) in terms of their content, structure, and format.
+<!-- America or NC? -->
+- *Can the use of language analysis from US court decisions in North Carolina help predict future judicial behavior in America?*\
+This needs to be refined/concentrated and I know there are a lot of holes... Predict what? winning/losing in general or only in cases where circumstances are similar?? Unsure... However, considering that precedent matters so much in the courts, general patterns should illuminate some kind of information about how judges would approach similar cases in the future.
 
-The US rulings in Harvard's Caselaw Access Project database could be used for this. They have all public court decisions possible, so I could include all cases present at the federal, state, and local levels. The ideal data set would then be structured to include language pattern analysis - word frequency, name, tone analysis, legal terminology, and the length and/or complexity (using a complexity calculator/algorithm) of sentences. With these measures in line, they could be compared with the outcome of the case, whether in favor of the plaintiff or defendant. From there, it may be possible to predict if certain measures in legal language show favor toward a plaintiff or defendant.    
+<!--
 
-## - What are the available data and/ or datasets that (best) align with your idealized data and dataset(s)? Describe where there is alignment and misalignment. How will you address any misalignment?
+As you point out, there is more to think about here. A lot of this deals with operationalizing your research question. What do you mean by "judicial behavior"? What are the specific outcomes you are trying to predict? How will you measure these outcomes? What are the variables/ features you will use to predict these outcomes? How will you measure these features?
 
-The Harvard CaseLaw database would align well with my study because there is all the corpora I could possibly need or get access to. 
+But before you start adding complexity, just touch base with your research question. What is it you are trying to find out? Why does it matter? What have others done in this area? What are the gaps in the literature? If you address these first, the rest will follow a bit more naturally.
 
+-->
 
-### Draft a data preparation strategy
+### Ideal dataset
+
+- *What is the ideal data and ideal dataset(s) will be necessary to address your research problem and statement? Describe the data and dataset(s) in terms of their content, structure, and format.*\
+The US rulings in Harvard's Caselaw Access Project database could be used for this. <!-- You should be more clear about what is actually in the data base and what you will need to to to acquire, curate, and transform the cases such that they will be useful in your research--> They have all public court decisions possible, so I could include all cases present at the federal, state, and local levels. The ideal data set would then be structured to include language pattern analysis - word frequency, name, tone analysis, legal terminology, and the length and/or complexity (using a complexity calculator/algorithm) of sentences. <!-- This is a long list. Do you have any corroborating evidence that these are good/ useful features? Again, background literature would be really helpful here.--> With these measures in line, they could be compared with the outcome of the case, whether in favor of the plaintiff or defendant. From there, it may be possible to predict if certain measures in legal language show favor toward a plaintiff or defendant. <!-- Now, just clarifying, what do you mean by legal language? Who's language? Defendant's? Plaintiff's? Judge's. You need to be more specific.-->
+
+### Available data and datasets
+
+- *What are the available data and/ or datasets that (best) align with your idealized data and dataset(s)? Describe where there is alignment and misalignment. How will you address any misalignment?*\
+The Harvard CaseLaw database would align well with my study because there is all the corpora I could possibly need or get access to.
+
+## Data preparation strategy
 
 1. Develop a data preparation strategy that outlines the data and dataset(s) that will be necessary to address your research problem and statement. Your strategy should outline the acquisition, curation, and transformation of the data and dataset(s) and should address the following questions:
 
-First, I would need to access the Harvard Caselaw Project. I need to compile all of the corpora I will be using into one. It seems like they can be accessed via JSON files, so I would need to learn/understand how to manipulate those and tabularize the meta data that those contain. I will most likely also have to narrow my research into a state or a certain court level within all the states so that all information found in them can be referenced to each other for pattern recognitoin. I would prefer to do all appellate court decisions in the US, minus other territories, or either DC, MD, or NC. 
-Then, I would need to quantify and curate for word frequency, name of defendants/plaintiffs, who won, issue, type of suit, tone analysis, legal terminology, and the length and/or complexity (using a complexity calculator/algorithm) of sentences within each case. 
-With this, I would need to then consider other factors that might influence the court decisions, like location perhaps. 
+First, I would need to access the Harvard Caselaw Project. I need to compile all of the corpora I will be using into one. It seems like they can be accessed via JSON files, so I would need to learn/understand how to manipulate those and tabularize the meta data that those contain. I will most likely also have to narrow my research into a state or a certain court level within all the states so that all information found in them can be referenced to each other for pattern recognitoin. I would prefer to do all appellate court decisions in the US, minus other territories, or either DC, MD, or NC.
+Then, I would need to quantify and curate for word frequency, name of defendants/plaintiffs, who won, issue, type of suit, tone analysis, legal terminology, and the length and/or complexity (using a complexity calculator/algorithm) of sentences within each case.
+With this, I would need to then consider other factors that might influence the court decisions, like location perhaps.
+
+<!-- I would look into what the contents and structure of the files from the Harvard Caselaw Project first. It's hard to imagine (realistically) what you can extract and the measures you can derive without knowing for sure what you have and how possible it is to manipulate. In addition, while is sounds more impressive to add a host of measures, it quickly becomes unweildy. I would really encourage you to look at and include any relevant literature in this area to help you narrow your focus and help you define a feasible research plan. -->
 
 
 ## Assessing your progress
@@ -34,35 +48,52 @@ Some questions to consider:
 
 - What did you learn?
 
-I learned more about my research question and had to actually think about the data curation steps, which was great progress for my project. 
+I learned more about my research question and had to actually think about the data curation steps, which was great progress for my project.
+
+<!-- Cool. Yeah, the more you find out the more realistic your plan becomes and it gets exciting. Setbacks are part of the process, however. :) -->
 
 - What did you find most/ least challenging?
 
 I think making the data curation steps is the hardest.
 
+<!-- As you move forward, I would encourage you to take a look at the database files themselves and then envision an 'idealized' dataset for the curated dataset and then another 'idealized' dataset for the transformed dataset. This will help you stay grounded and think of the practical aspects that are key to any research project. -->
+
 - What resources did you consult?
 
-I consulted the professor and the textbook. 
+I consulted the professor and the textbook.
+
+<!-- Cool. -->
 
 - What questions or concerns do you have at this point?
 
-I know I will need more assistance with my data curation down the road, but for now I have a good start. 
+I know I will need more assistance with my data curation down the road, but for now I have a good start.
 
 - What do you need to address in order to move forward?
 
-I need to start the actual steps of taking my data from Harvard Caselaw and curating/transforming the available corpus for my project. This comes down to my data preparation strategy, which is currently very loose and I need guidance on. 
-Also, how can I make a BibTex citation for the entire database since I want to cite Harvard Caselaw.  
+I need to start the actual steps of taking my data from Harvard Caselaw and curating/transforming the available corpus for my project. This comes down to my data preparation strategy, which is currently very loose and I need guidance on.
+
+Also, how can I make a BibTex citation for the entire database since I want to cite Harvard Caselaw.
+
+<!-- You may be able to find a page on their site which will instruct you on how to cite the project. If not, search Google Scholar and/ or look at  research articles that have cited this source. -->
+
 
 ## Consider how your prospectus is shaping up.
 
 - How have your interests evolved?
 
-My interests have definitely evolved. I knew I wanted to focus on legal linguistics, but I have explored a lot of areas within that to get where I am now. 
+My interests have definitely evolved. I knew I wanted to focus on legal linguistics, but I have explored a lot of areas within that to get where I am now.
+
+<!-- Cool. It is a neat area that has a lot of potential growth. -->
 
 - How have your research questions and objectives evolved?
 
-Yes, my research question has changed just in the last few weeks. I thought I wanted to compare legal with nonlegal corpus, but now I want to use just legal corpus to predict something, which is most likely judicial behavior. Meeting on April 1st has helped me understand the directions I can go in with this. 
+Yes, my research question has changed just in the last few weeks. I thought I wanted to compare legal with nonlegal corpus, but now I want to use just legal corpus to predict something, which is most likely judicial behavior. Meeting on April 1st has helped me understand the directions I can go in with this.
+
+<!-- Cool. -->
 
 - How have these changes been influenced by the literature you have reviewed and/ or the knowledge you have gained in this course?
 
-This change has happened because I have come into contact with the Harvard cite for corpus, which honestly feels like a gold mine. With access to all public legal corpus in the US at my fingertips, doing a holistic study to find patterns and see if there is a general trajectory of judicial behavior could be really groundbreaking in such a new field. 
+This change has happened because I have come into contact with the Harvard cite for corpus, which honestly feels like a gold mine. With access to all public legal corpus in the US at my fingertips, doing a holistic study to find patterns and see if there is a general trajectory of judicial behavior could be really groundbreaking in such a new field.
+
+<!-- Don't forget the literature. I think if there is one thing to take away from this step it's to dive back into the primary literature to help you frame the research question and methods a bit more effectively. -->
+
